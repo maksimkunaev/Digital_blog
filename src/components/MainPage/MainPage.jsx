@@ -14,47 +14,41 @@ const SOURCES = [
         text:
             "Curabitur lobartis id lorem id bibendum ud it consectetur magna. Quisque volutpat",
         img:
-            "https://st37.stpulscen.ru/images/product/126/708/926_big.jpg"
+            "./images/A.jpg"
     },
     {
         text:
             "Curabitur lobartis id lorem id bibendum ud it consectetur magna. Quisque volutpat",
         img:
-            "https://st37.stpulscen.ru/images/product/126/708/926_big.jpg"
+            "./images/book.jpg"
     },
     {
         text:
             "Curabitur lobartis id lorem id bibendum ud it consectetur magna. Quisque volutpat",
         img:
-            "https://st37.stpulscen.ru/images/product/126/708/926_big.jpg"
+            "./images/leave.jpg"
     },
     {
         text:
             "Curabitur lobartis id lorem id bibendum ud it consectetur magna. Quisque volutpat",
         img:
-            "https://st37.stpulscen.ru/images/product/126/708/926_big.jpg"
+            "./images/8.jpg"
     },
 
     {
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         img:
-            "https://st37.stpulscen.ru/images/product/126/708/926_big.jpg"
+            "./images/88.jpg"
     }
 ];
 
 class MainPage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            showSubpage: true
-        };
-    }
 
     @bind
     renderCards(source, style) {
         const { text, img } = source;
-
+        console.log(img)
         return <div className={[style]}>
             <div style={{backgroundImage: `url(${img})`}} className={`MainPage__media_${style}`}></div>
             <div className={`MainPage__content_${style}`}>
@@ -80,7 +74,6 @@ class MainPage extends Component {
     }
 
     render() {
-        const { showSubpage } = this.state;
 
         return <div className="MainPage_cover">
             <div className="MainPage">
@@ -97,11 +90,11 @@ class MainPage extends Component {
                 </div>
                 <div className="MainPage__beyond">
                     {this.renderCards(SOURCES[0], "smallCard")}
-                    {this.renderCards(SOURCES[1], "smallCard")}
+                    {this.renderCards(SOURCES[0], "smallCard")}
                 </div>
                 <div className="MainPage__beyond">
                     {this.renderCards(SOURCES[2], "smallCard")}
-                    {this.renderCards(SOURCES[3], "smallCard")}
+                    {this.renderCards(SOURCES[2], "smallCard")}
                 </div>
             </div>
         </div>

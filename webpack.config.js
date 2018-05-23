@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const srcPath = path.resolve(__dirname, 'src');
 
@@ -52,6 +53,14 @@ module.exports = {
         }),
         new ExtractTextPlugin("styles.css"),
         new webpack.NamedModulesPlugin(),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new CopyWebpackPlugin([
+            {
+                from: path.join(__dirname, 'src/components/MainPage/media'),
+                to: path.join(__dirname, 'dist/images')},
+            {
+                from: path.join(__dirname, 'src/components/Animation/images'),
+                to: path.join(__dirname, 'dist/images') }
+          ])
     ]
 }

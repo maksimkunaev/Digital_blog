@@ -49,6 +49,7 @@ class Animation extends Component {
             </div>
             <div className="Wave_right" style={{ transform: `translateY(${ty_right}px)` }}></div>
             <div className="Wave_white" style={{ transform: `translateY(${ty_white}px)` }}></div>
+            <div className="Head" style={{ transform: `translateY(${ty_digital}px)` }}></div>
         </div>
     }
 }

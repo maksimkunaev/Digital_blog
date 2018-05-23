@@ -109,3 +109,11 @@
 .SubPage__right-item-text {
     margin-top: 5px;
 }
+
+.SubPage__right-item-text div {
+    background-image: url('/images/8.jpg');
+    width: 100px;
+    height: 100px;
+    background-size:   100%;
+    background-repeat: no-repeat;
+}

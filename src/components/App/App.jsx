@@ -17,8 +17,7 @@ class App extends Component {
 
     @bind
     onMoreClick() {
-        this.setState({ showSubpage: true });
-        wond
+        this.setState({ showSubpage: !this.state.showSubpage });
     }
 
     render() {

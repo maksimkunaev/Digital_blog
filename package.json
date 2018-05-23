@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --mode development --progress --watch",
-    "server": "node server"
+    "dev": "webpack-dev-server --mode development"
   },
   "author": "Maksim Kunaev",
   "license": "ISC",
@@ -30,6 +29,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-stage-2": "^6.24.1",
     "classnames": "^2.2.5",
+    "copy-webpack-plugin": "^4.5.1",
     "decko": "^1.2.0",
     "express": "^4.16.3",
     "file-loader": "^1.1.11",

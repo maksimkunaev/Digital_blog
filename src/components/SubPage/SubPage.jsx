@@ -76,7 +76,10 @@ class SubPage extends Component {
                         <div className="SubPage__right-item">
                             <img src="" alt=""/>
                             <div className="SubPage__right-item-text">
-                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <div></div>
+                                <p>
+                                    consectetur adipiscing elit
+                                </p>
                             </div>
                         </div>
                     </div>

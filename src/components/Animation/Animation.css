@@ -1,7 +1,8 @@
 .Wave_right,
 .Wave_left,
 .Wave_digital,
-.Wave_white {
+.Wave_white,
+.Head {
     position: absolute;
     pointer-events: none;
     transition: transform 0.4s ease-out;
@@ -80,4 +81,16 @@
 
 .Digital-contnent p {
     margin: 0;
+}
+
+.Head {
+    background-image: url('/images/head.png');
+    width: 327px;
+    height: 308px;
+    background-repeat: no-repeat;
+    top: 125px;
+    left: 170px;
+    background-position-x: left;
+    position: relative;
+    z-index: 1;
 }
