@@ -5,30 +5,32 @@ import MainPage from '../MainPage/';
 import './App.css';
 import cn from 'classnames';
 
+import SubPage from '../SubPage';
+
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            showSubpage: false
         };
     }
 
-    componentDidMount() {
-        // window.addEventListener('scroll', this.onScrollTop)
-    }
-
-    componentWillUnmount() {
-
+    @bind
+    onMoreClick() {
+        this.setState({ showSubpage: true });
+        wond
     }
 
     render() {
+        const { showSubpage } = this.state;
 
         return (
             <div className='App'>
                 <Animation className='App__animation' />
                 <MainPage />
-                { false ? <SubPage className='App__subPage' />: ''}
-        </div>
+                <div className="App__more" onClick={this.onMoreClick}>Показать больше</div>
+                {showSubpage && <SubPage />}
+            </div>
         )
     }
 }

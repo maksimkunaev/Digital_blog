@@ -4,7 +4,6 @@ import cn from 'classnames';
 import './Animation.css';
 
 class Animation extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -26,10 +25,8 @@ class Animation extends Component {
     @bind
     onScrollTop(e) {
         let { ty_right, ty_left, ty_digital, ty_white } = this.state;
-        // let wave_front = document.querySelector('.Wave_right');
-        // let wave_back = document.querySelector('.Wave_left');
-
         let windowScroll = window.scrollY;
+
         this.setState({
             ty_right: Math.max(-windowScroll * 1.1, -400),
             ty_left: windowScroll * 0.5,

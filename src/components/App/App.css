@@ -18,6 +18,19 @@ body, html {
     /*margin-bottom: 100px;*/
 }
 
+.App__more {
+    color: #ccc;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+.App__more:hover {
+    color: #33919b;
+}
+
 .App__subPage {
     /*margin-bottom: 10px;*/
 }
