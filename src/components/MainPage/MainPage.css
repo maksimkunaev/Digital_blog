@@ -1,0 +1,129 @@
+.MainPage {
+    margin: 0 auto;
+}
+
+.MainPage__above,
+.MainPage__middle,
+.MainPage__beyond {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.MainPage_cover {
+    width: 100%;
+    z-index: 3;
+    position: relative;
+    margin-top: 80px;
+    background-color: #faf9fa;
+}
+
+.MainPage {
+    width: 800px;
+    background-color: #faf9fa;
+}
+
+.smallCard,
+.bigCard,
+a {
+    color: #6b6b6b;
+}
+
+.smallCard,
+.bigCard {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.smallCard {
+    width: 48%;
+    height: 150px;
+    padding: 10px;
+}
+
+.bigCard {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+}
+
+.MainPage__media_smallCard,
+.MainPage__media_bigCard {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.MainPage__media_smallCard {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+}
+
+.MainPage__media_bigCard {
+    width: 250px;
+    min-width: 250px;
+    height: 250px;
+}
+
+.MainPage__content_smallCard,
+.MainPage__content_bigCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainPage__content_smallCard {
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+.MainPage__content_bigCard {
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.MainPage__text_smallCard {
+    margin-bottom: 10px;
+}
+
+.MainPage__text_bigCard {
+    margin-bottom: 20px;
+}
+
+.MainPage__icons_smallCard {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.MainPage__icons_bigCard {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.MainPage__stats {
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;
+    color: #33919b;
+}
+
+a:active {
+    color: blue;
+}
+
+.MainPage__margin {
+    margin-left: 2px;
+}
+
+.MainPage__stats_disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
