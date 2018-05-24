@@ -93,3 +93,76 @@
     position: relative;
     z-index: 1;
 }
+
+@media screen and (max-width: 780px) {
+
+    .Animation {
+        height: 300px;
+    }
+    .Wave_left {
+        top: -78px;
+    }
+
+    .Wave_right {
+        bottom: -339px;
+    }
+
+    .Head {
+        width: 261px;
+        top: -22px;
+        left: 153px;
+    }
+
+    .Digital-contnent {
+        top: 138px;
+    }
+
+    .Wave_digital {
+        top: 29px;
+        width: 41%;
+    }
+
+    .Wave_white {
+        bottom: -114px;
+        height: 100%;
+        background-size: 59%;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+
+    .Animation {
+        height: 300px;
+    }
+    .Wave_left {
+        top: -171px;
+    }
+
+    .Wave_right {
+        bottom: -225px;
+    }
+
+    .Head {
+        width: 230px;
+        top: -38px;
+        left: 139px;
+    }
+
+    .Digital-contnent {
+        top: 113px;
+        left: 2px;
+        font-size: 21px;
+    }
+
+    .Wave_digital {
+        top: 54px;
+        width: 41%;
+    }
+
+    .Wave_white {
+        bottom: -90px;
+        background-size: 51%;
+    }
+}
+
