@@ -14,32 +14,32 @@ const SOURCES = [
         text:
             "Curabitur lobartis id lorem id bibendum ud it consectetur magna. Quisque volutpat",
         img:
-            "./images/A.jpg"
+            "/dist/A.jpg"
     },
     {
         text:
             "Curabitur lobartis id lorem id bibendum ud it consectetur magna. Quisque volutpat",
         img:
-            "./images/book.jpg"
+            "/dist/book.jpg"
     },
     {
         text:
             "Curabitur lobartis id lorem id bibendum ud it consectetur magna. Quisque volutpat",
         img:
-            "./images/leave.jpg"
+            "/dist/leave.jpg"
     },
     {
         text:
             "Curabitur lobartis id lorem id bibendum ud it consectetur magna. Quisque volutpat",
         img:
-            "./images/8.jpg"
+            "/dist/8.jpg"
     },
 
     {
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         img:
-            "./images/88.jpg"
+            "/dist/88.jpg"
     }
 ];
 

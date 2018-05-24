@@ -7,11 +7,9 @@ body, html {
 
 .App {
     background: #faf8fa;
-    border: 1px solid black;
     font-family: Roboto, sans-serif;
     width: 100%;
     max-width: 1800px;
-    margin: 0 auto;
 }
 
 .App__animation {

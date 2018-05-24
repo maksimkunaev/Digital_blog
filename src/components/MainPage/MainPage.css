@@ -18,8 +18,10 @@
 }
 
 .MainPage {
-    width: 800px;
     background-color: #faf9fa;
+    max-width: 800px;
+    background-color: #faf9fa;
+    width: 100%;
 }
 
 .smallCard,
@@ -79,10 +81,13 @@ a {
 .MainPage__content_bigCard {
     margin-left: 40px;
     font-size: 18px;
+    height: 100%;
+    overflow: auto;
 }
 
 .MainPage__text_smallCard {
     margin-bottom: 10px;
+    overflow: auto;
 }
 
 .MainPage__text_bigCard {
@@ -126,4 +131,62 @@ a:active {
 .MainPage__stats_disabled {
     opacity: 0.6;
     pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    .MainPage {
+        margin: 10px;
+    }
+
+    .MainPage__above,
+    .MainPage__middle,
+    .MainPage__beyond {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .smallCard, .bigCard {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        margin-bottom: 24px;
+        min-width: 300px;
+    }
+
+    .bigCard {
+        height: 400px;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .MainPage__media_bigCard {
+        width: 250px;
+        min-width: 250px;
+        height: 250px;
+        background-position: center;
+    }
+
+    .MainPage__content_smallCard, .MainPage__content_bigCard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MainPage__content_bigCard {
+        margin-left: 40px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MainPage__text_bigCard {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 121px;
+        overflow: hidden;
+    }
 }

@@ -57,10 +57,10 @@ module.exports = {
         new CopyWebpackPlugin([
             {
                 from: path.join(__dirname, 'src/components/MainPage/media'),
-                to: path.join(__dirname, 'dist/images')},
+                to: path.join(__dirname, 'dist')},
             {
                 from: path.join(__dirname, 'src/components/Animation/images'),
-                to: path.join(__dirname, 'dist/images') }
+                to: path.join(__dirname, 'dist') }
           ])
     ]
 }
